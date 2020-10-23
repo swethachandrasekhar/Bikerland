@@ -1,0 +1,443 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    background-color: #1F2022;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+i {
+    color: #F2A11c;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.wrapper {
+			width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            /* border: 1px red solid; */
+}
+
+
+
+header {
+    background: url('./assets/image-1.jpg') center no-repeat;
+    background-size: cover;
+    /* border: 2px green solid; */
+    /* position: relative; */
+    height: 100vh;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 12rem;
+    text-align: center;
+    color: #F2A11c;
+    /* padding: 100px; */
+    margin-top: 250px;
+    float: left;
+    width: 90%;
+    padding-left: 100px;
+    
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem; 
+    color:#1F2022;
+
+}
+button,
+ .read-more{
+    font-family: 'catamaran';
+    font-style: bold;
+    color: #F2A11c;
+    background-color: #1F2022;
+    padding: 5px 12px;
+    border: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+section p {
+    font-family: 'catamaran';
+    font-size: 1.5rem;
+    font-style: normal;
+    color:#1F2022;
+    line-height: 29px;
+    padding: 10px 0 20px 0;
+
+}
+
+.nav-links {
+    
+    /* border: 1px solid yellow; */
+    /* float: left; */
+    width: 100%;
+    float: right;
+}
+.nav-links nav {
+
+     text-align: center;
+}
+
+
+li {
+    display: inline-block;
+    margin: 25px;
+    
+}
+
+header li a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'catamaran';
+    
+}
+
+.social-links {
+    width: 10%;
+    float: right;
+}
+.social-links li {
+    display: block;
+    margin: 5px;
+    
+}
+
+.social-links ul {
+
+    padding-top: 300px;
+}
+
+
+
+.about-us-text{
+    /* padding: 50px 10px 10px 0; */
+    /* position: absolute; */
+    /* top: 30%; */
+    margin-top: 15%;
+    padding-right: 5%;
+}
+
+.our-mission-text {
+
+    margin-top: 15%;
+    padding-left: 5%;
+}
+.meet-alissa {
+    
+    background-color: white;
+    padding: 5% 0;
+}
+
+/* img {
+    object-fit: cover;
+} */
+
+
+.alissa-image{
+    width: 25%;
+    float: left;
+    
+}
+
+.alissa-text {
+    width: calc(75% - 30px);
+    float: left;
+    margin-left: 30px;
+    padding-left: 10px;
+    
+}
+
+.about,
+.mission  {
+    background-color:#F4F4F4;
+    /* float: left; */
+}
+.grid {
+    width: 50%;
+    float: left;
+    /* height: 60vh; */
+    border: 1px solid green;
+}
+
+.about-us-image {
+    background: url('./assets/image-2.jpg') center;
+    background-size: cover;
+    width: 50%;
+    height: 50vw;
+}
+
+/* OUR MISSION */
+.our-mission-image {
+    background: url('./assets/image-7.jpg') center;
+    background-size: cover;
+    width: 50%;
+    height: 50vw;
+}
+
+
+
+/* MORE LINKs  */
+
+.more-links {
+    background-image: url('./assets/image-5.jpg');
+    background-size: cover;
+    padding: 12%;
+}
+
+.more-links-items nav {
+    text-align: center;
+    
+}
+.more-links-items li {
+    display: inline-block;
+    margin: 25px;
+}
+.more-links-items i,
+.more-links-items a {
+    display: block;
+    margin: 0 20px;
+}
+
+.more-links-items i {
+    padding-bottom:15px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.bike i {
+    font-size: 3rem;
+}
+.more-links-items a {
+    font-family: 'catamaran';
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+
+
+/* GALLERY */
+
+.gallery-images div{
+    width: calc((100% - 40px) / 3);
+    float: left;
+    margin-right: 20px;
+}
+.gallery-images div:nth-child(3n) {
+    margin-right: 0;
+}
+
+.gallery-images {
+    padding: 20px 0 60px 0;
+}
+.gallery {
+    text-align: center;
+    background-color: #F4F4F4;
+}
+
+.gallery h2 {
+    padding: 20px 0 25px 0;
+}
+
+/* FOOTER STYLING */
+
+.contact {
+    background-color: #1F2022;
+    padding-bottom: 40px;
+}
+
+.contact nav {
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    
+}
+
+.contact li {
+    font-family: 'catamaran';
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+h3 {
+
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem; 
+    color:#F2A11C;
+    padding: 20px 0;
+    font-weight: normal;
+}
+
+.address, .subscribe {
+    float: left;
+    width: 50%;
+}
+.contact p {
+    font-family: 'catamaran';
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1px;
+    /* padding: 0; */
+
+}
+.subscribe p {
+    padding-bottom: 0;
+}
+form {
+    margin: 15px 0;
+    /* border: 1px solid purple; */
+}
+input[type=email] {
+    width: 60%;
+    padding: 10px;
+    margin: 0;
+    border-style: none;
+}
+input[type=button]{
+    padding: 10px;
+    width: 25%;
+    border-radius: 0;
+    border-style: none;
+    margin: 0;
+    background-color: #F2A11C;
+    font-family: 'catamaran';
+    text-transform: uppercase;
+}
+.copyright {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 1.5rem;
+}
+.mobile-menu {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+
+    .about-us-text{
+    /* padding: 50px 10px 10px 0; */
+    /* position: absolute; */
+    /* top: 30%; */
+    margin-top: 2%;
+    
+    /* padding-right: 5%; */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 18px;
+    padding: 0;
+}
+.grid {
+    /* padding: 0; */
+}
+.read-more{
+     font-size: 1.2rem;
+ }
+.our-mission-text {
+
+    margin-top: 2%;
+    /* padding-left: 5%; */
+}
+
+}
+@media (max-width:580px) {
+   .nav-links,
+   .social-links {
+       display: none;
+   } 
+   header {
+       background-image: url('./assets/image-1-mobile@2x.jpg');
+       background-size: cover;
+   }
+   .mobile-menu {
+       display: inline;
+        font-size: 4rem;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+   }
+   .mobile-menu i {
+       color: lightgrey;
+   }
+
+   .box1, .box2, .box3, .box4 {
+       width: 100%;
+   }
+
+   
+   
+   .box-one, .box-two {
+       width: 100%;
+
+   }
+
+   .gallery-images div {
+       width: calc((100% - 20px) / 2);
+       margin-right: 10px;
+   }
+   .gallery-images div:nth-child(3n) {
+       display: none;
+   }
+  .address, .subscribe {
+      width: 100%;
+  }
+
+  input[type=email], input[type=button]{
+      width: 100%;
+      padding: 10px 10px;
+      
+  }
+   
+  input[type=email]{
+      margin-bottom: 10px;
+  }
+
+  h1 {
+      font-size: 7rem;
+      padding: 0;
+  }
+
+}
+
+
+
