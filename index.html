@@ -12,47 +12,54 @@
     
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content.</a>
     
-        <header>
+        <header id="home">
             <div class="wrapper clearfix">
                 <div class="nav-links">
                     <nav>
+                        
+                        <input type="checkbox" id="toggle" name="toggle">
+                        <label for="toggle"><i class="fa fa-bars"></i> </label>
+                        
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="mobile-menu">
+                <!-- <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
-                </div>
+                </div> -->
                 <h1>Bikerland</h1>
                 <div class="social-links">
                     <ul>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-snapchat-ghost"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>    
         </header>
     
-        <main>
-        <section class="about clearfix">
+        <main id="main-content" class="">
+        <section id="about" class="about clearfix">
+
+                <div class="grid-one about-us-image">
+                    
+                </div>
            
-                 <div class="wrapper">
-                    <div class="grid about-us-text">
+                 <div class="wrapper text-grid">
+                    <div class="grid-two about-us-text">
                         <h2>About us</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus dolore nostrum iure praesentium amet quibusdam deserunt veniam quam earum sunt minus facilis similique obcaecati laboriosam voluptatum libero autem ipsa quas, corporis aliquam! Eveniet, id nam fugiat ratione tempore odio quisquam suscipit laboriosam error nesciunt, deserunt modi omnis ea voluptates atque inventore ducimus, quasi dolores enim neque quae libero </p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus dolore nostrum iure praesentium amet quibusdam deserunt veniam quam earum sunt minus facilis similique obcaecati laboriosam voluptatum libero autem ipsa quas, corporis aliquam! Eveniet,</p>
                         <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
-                <div class="grid about-us-image">  
-                    image    
-                </div>
+               
         </section>           
         <section class="mission">
                 <div class="grid our-mission-image">
@@ -61,20 +68,20 @@
                 <div class="wrapper clearfix">
                     <div class="grid our-mission-text">
                         <h2>Our Mission</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci quas delectus, unde animi expedita porro itaque perferendis incidunt magni minima distinctio! Sapiente ullam, ipsum asperiores cupiditate at laborum aut? Distinctio ut placeat tenetur reprehenderit delectus libero asperiores quis molestias eos? Ipsam dolorem esse illo sint, quod rerum vitae in ipsum error alias recusandae debitis iure? Adipisci nisi sed sunt ipsam, id ex no </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci quas delectus, unde animi expedita porro itaque perferendis incidunt magni minima distinctio! Sapiente ullam, ipsum asperiores cupiditate at laborum aut? Distinctio ut placeat tenetur reprehenderit delectus </p>
                         <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
         </section>
         <section>
-            <div class="meet-alissa">
+            <div id="blog" class="meet-alissa">
               <div class="wrapper clearfix">
                     <div class="alissa-image">
-                        <img  src="./assets/image-6.jpg" alt="Picture of a women named Alissa on a bike">
+                        <img  src="./assets/image-6.jpg" alt="Alissa riding a bike in the city">
                     </div>
                     <div class="alissa-text">
                         <h2>Meet Alissa</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorum mollitia deleniti illo iure repudiandae sapiente reprehenderit assumenda debitis sit numquam voluptatem necessitatibus blanditiis alias, quasi nihil sint excepturi eos fugiat omnis id? Fugit non cupiditate quae voluptate temporibus, facere veniam quos nobis cum suscipit possimus quaerat ducimus similique at nostrum totam magnam, iure quam. Eum, illo doloremque. Aperiam consectetur excepturi sint accusamus laboriosam, maiores, totam nam voluptates aliquam id voluptatum, reprehenderit dignissimos molestias rem? Dolorem eum fugit odit! Dolores nam illum eos ipsa quisquam, hic natus nulla eligendi, ea ad vel minus dolor expedita inventore, nisi veniam ab quia.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorum mollitia deleniti illo iure repudiandae sapiente reprehenderit assumenda debitis sit numquam voluptatem necessitatibus blanditiis alias, quasi nihil sint excepturi eos fugiat omnis id? Fugit non cupiditate quae voluptate temporibus, facere veniam quos nobis cum suscipit possimus quaerat ducimus similique at nostrum totam magnam, iure quam. Eum, illo doloremque. Aperiam consectetur excepturi sint accusamus laboriosam, maiores, totam nam voluptates aliquam id voluptatum, reprehenderit </p>
                         <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
@@ -87,32 +94,32 @@
                    <nav>
                         <li class="bike">
                             <i class="fas fa-bicycle"></i>
-                            <a href="">products</a>
+                            <a href="#">products</a>
                         </li>
                         <li>
                             <i class="fas fa-users"></i>
-                            <a href="">Community</a>
+                            <a href="#gallery">Community</a>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
-                            <a href="">Reach Out</a>
+                            <a href="#contact">Reach Out</a>
                         </li>
                     </nav>
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
            <div class="wrapper">
                 <h2>The Gram</h2>
                 <div class="gallery-images clearfix">
                     <div>
-                        <img src="./assets/image-8.jpg" alt="women on a bicycle">
+                        <img src="./assets/image-8.jpg" alt="Women riding on a bicycle up the road">
                     </div>
                     <div>
-                        <img src="./assets/image-3.jpg" alt="man on a bike">
+                        <img src="./assets/image-3.jpg" alt="Man riding the bicyle in a bicycle race">
                     </div>
                     <div>
-                        <img src="./assets/image-4.jpg" alt="White bicycle">
+                        <img src="./assets/image-4.jpg" alt="White bicycle parked against a metal shutter">
                     </div>
                 </div>
             </div>
@@ -121,14 +128,14 @@
     </main>
     
     <footer>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="wrapper clearfix">
                  <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="address">
