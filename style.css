@@ -20,9 +20,9 @@ html {
 }
 
 body {
-    /* font-family: 'Josefin Sans', sans-serif; */
     background-color: #1F2022;
-    color: white;
+    color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 ul {
@@ -30,63 +30,98 @@ ul {
 }
 
 a {
+    font-family: 'Catamaran', sans-serif;    
     text-decoration: none;
     color: inherit;
+    font-size: 2rem;
+    text-decoration: none;
 }
+
 i {
-    color: #F2A11c;
+    color: #F2A11C;
 }
-.nav-links label i{
-    color: lightgray;
-}
+
 img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-
-.wrapper
-{
-			width: 90%;
-            margin: 0 auto;
-            max-width: 1200px;
-            /* border: 1px red solid; */
-}
-
-
-
 header {
     background: url('./assets/image-1.jpg') center no-repeat;
     background-size: cover;
-    /* border: 2px green solid; */
-    /* position: relative; */
     height: 100vh;
 }
-h1 {
+
+h1, h2, h3 {
     font-family: 'Pacifico', cursive;
+}
+
+h1 {   
     font-size: 13rem;
     text-align: center;
     color: #F2A11c;
     margin-top: 250px;
     float: left;
     width: 90%;
-    padding-left: 100px;
-    
+    padding-left: 50px; 
 }
+
 h2 {
-    font-family: 'Pacifico', cursive;
     font-size: 4.2rem; 
     color:#1F2022;
-
 }
-h3 {
 
-    font-family: 'Pacifico', cursive;
+h3 {    
     font-size: 2.5rem; 
     color:#F2A11C;
     padding: 20px 0;
     font-weight: normal;
+}
+
+li {
+    font-family: 'Catamaran', sans-serif;
+    display: inline-block;
+    margin: 25px;   
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+}
+section p {
+    font-style: normal;
+    color:#1F2022;
+    line-height: 29px;
+    padding: 10px 0 20px 0;
+
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* SKIP LINK  */
+.skip-link{
+    position:absolute;
+    left:-3000px;
+    top:10px;
+    z-index: 999;    
+    background-color: #FFFFFF;
+    color: #1F2022;
+}
+
+.skip-link:focus{
+    left:0;
+}
+
+/* HEADER NAVIGATION STYLES  */
+
+header li a{ 
+    font-weight: bold
 }
 
 button,
@@ -101,69 +136,22 @@ button,
     text-transform: uppercase;
 }
 
-section p {
-   font-family: 'Catamaran', sans-serif;
-    font-size: 2.0rem;
-    font-style: normal;
-    color:#1F2022;
-    line-height: 29px;
-    padding: 10px 0 20px 0;
-
-}
-/* SKIP LINK  */
-  .skip-link{
-    position:absolute;
-    left:-3000px;
-    top:10px;
-    z-index: 999;
-    
-    background-color: white;
-    color: black;
-  }
-
-  .skip-link:focus{
-    left:0;
-  }
-
-.nav-links {
-    
-    width: 100%;
-    height: 100%;
-}
-
 .nav-links nav {
-
-     text-align: center;
-    
+    text-align: center;   
 }
 
-li {
-    display: inline-block;
-    margin: 25px;   
-}
-header li {
-    color: white;
-}
-header li:hover,
-header li:focus, header label:hover, header label:focus {
-    color: #F2A11C;
-}
-header li a{
-    font-size: 2rem;
-    /* color: white; */
-    text-decoration: none;
-   font-family: 'Catamaran', sans-serif;    
-}
 .nav-links label {
     font-size: 4rem;
-    /* color: lightgrey; */
     position: fixed;
     right: 0;
     top: 0;
     z-index: 10;
-    padding: 10px 20px 0px 0;
-    padding-left: 95px;
+    padding: 10px 20px 0px  95px;
     display: none;
+}
+
+.nav-links label i{
+    color: #F4F4F4;
 }
 
 .nav-links input {
@@ -175,63 +163,75 @@ header li a{
     display: none;
 }
 
+/* SOCIAL MEDIA LINKS */
+
 .social-links {
     width: 10%;
     float: right;
+}
+
+.social-links ul {
+    padding-top: 250px;
+    text-align: right;
 }
 .social-links li {
     display: block;
     margin: 12px;    
 }
 
-.social-links ul {
 
-    padding-top: 250px;
-    text-align: right;
-}
- /* ************************* ABOUT US SECTION ************************* */
+ /******** ABOUT US SECTION ******** */
+
+ /* section backgrounds color*/
 .about,
 .mission  {
     background-color:#F4F4F4;
 }
 
 .grid-two,
+.grid-one,
+.grid {
+    width: 50%;   
+}
+.grid-two,
 .grid-one {
-    width: 50%;
     float: right;
 }
 .grid {
     float: left;
-    width: 50%;
 }
 
-.text-grid {
-    /* position: relative; */
-}
 .about-us-text{
     margin-top: 15%; 
-     padding-right: 5%;
-    /* position: absolute;
-    top: 50%;
-  transform: translate(0, -50%); */
-
+    padding-right: 5%;
 }
 
-.about-us-image {
-    background: url('./assets/image-2.jpg') center;
+.our-mission-text {
+    margin-top: 15%;
+    padding-left: 5%;
+}
+
+.about-us-image, 
+.our-mission-image {
     background-size: cover;
+    background-position: center;
     width: 50%;
     height: 50vw;
 }
 
-.our-mission-text {
-
-    margin-top: 18%;
-    padding-left: 5%;
+.about-us-image {
+    background-image: url('./assets/image-2.jpg');
 }
-.meet-alissa {
-    
-    background-color: white;
+
+.our-mission-image {
+    background-image: url('./assets/image-7.jpg');
+}
+
+
+/* MEET ALISSA  */
+
+.meet-alissa {   
+    background-color: #FFFFFF;
     padding: 5% 0;
 }
 
@@ -244,23 +244,10 @@ header li a{
     width: calc(75% - 30px);
     float: left;
     margin-left: 30px;
-    padding-left: 10px;
-    
+    padding-left: 10px;   
 }
 
-
-
- /* ************************* OUR MISSION************************* */
-.our-mission-image {
-    background: url('./assets/image-7.jpg') center;
-    background-size: cover;
-    width: 50%;
-    height: 50vw;
-}
-
-
-
-/* MORE LINKs  */
+/* MORE LINKS  */
 
 .more-links {
     background-image: url('./assets/image-5.jpg');
@@ -286,35 +273,18 @@ header li a{
     padding-bottom:15px;
     text-align: center;
     font-size: 2.5rem;
-    color: white;
+    color: #FFFFFF;
 }
 .bike i {
     font-size: 3rem;
 }
 .more-links-items a {
-   font-family: 'Catamaran', sans-serif;
-    font-size: 2rem;
     text-transform: capitalize;
     color: #f2A11C;
-
 }
 
+/* THE GRAM - IMAGE GALLERY */
 
-
-/* GALLERY */
-
-.gallery-images div{
-    width: calc((100% - 40px) / 3);
-    float: left;
-    margin-right: 20px;
-}
-.gallery-images div:nth-child(3n) {
-    margin-right: 0;
-}
-
-.gallery-images {
-    padding: 20px 0 60px 0;
-}
 .gallery {
     text-align: center;
     background-color: #F4F4F4;
@@ -322,6 +292,20 @@ header li a{
 
 .gallery h2 {
     padding: 30px 0 35px 0;
+}
+
+.gallery-images {
+    padding: 20px 0 60px 0;
+}
+
+.gallery-images div{
+    width: calc((100% - 40px) / 3);
+    float: left;
+    margin-right: 20px;
+}
+
+.gallery-images div:nth-child(3n) {
+    margin-right: 0;
 }
 
 /* FOOTER STYLING */
@@ -334,44 +318,44 @@ header li a{
 .contact nav {
     padding: 30px 0;
     display: block;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .contact li {
-   font-family: 'Catamaran', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 20px;
+    text-transform: uppercase;   
 }
-
 
 .address, .subscribe {
     float: left;
     width: 50%;
 }
+
 .contact p {
-   font-family: 'Catamaran', sans-serif;
-    font-size: 1.5rem;
-    color: white;
+    color: #FFFFFF;
     line-height: 1px;
-    /* padding: 0; */
 
 }
+
 .subscribe p {
     padding-bottom: 0;
 }
 
+/* FOOTER FORM STYLING  */
 
 form {
     margin: 15px 0;
-    /* border: 1px solid purple; */
+    font-size: 2rem;
 }
+
 input[type=email] {
     width: 60%;
     padding: 10px;
     margin: 0;
     border-style: none;
 }
+
 input[type=button]{
     padding: 10px;
     width: 25%;
@@ -379,12 +363,23 @@ input[type=button]{
     border-style: none;
     margin: 0;
     background-color: #F2A11C;
-   font-family: 'Catamaran', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
-     font-weight: bold;
+    font-weight: bold;
+    border: 1px solid transparent;
 }
+
+input[type=button]:hover,
+input[type=button]:focus{
+    cursor: pointer;
+    border: 1px solid #f4f4f4;
+
+}
+
+/* COPYRIGHT STYLING  */
+
 .copyright {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 20px 0;
     text-align: center;
     color: #4A4A4A;
@@ -393,53 +388,48 @@ input[type=button]{
 
 .copyright a:hover,
 .copyright a:focus {
-    color: lightgrey;
+    color: #F4F4F4;
 }
 
 
+ /* MEDIA QUERIES */
+ /* MEDIA QUERIES FOR TABLETS */
 
-@media (max-width: 860px) {
+ @media (max-width: 860px) {
 
 .about-us-text, .our-mission-text {
     padding : 30px 20px 15px 20px;
     margin: 0;
-    /* font-size: 1rem; */
-
-}
-
-h2 {
-    font-size: 3rem;
 }
 
 section p {
-    font-size: 1.5rem;
     line-height: 20px;
-    padding: 20px 0;
-    
+    padding: 10px 0 15px;    
 }
 
 .read-more{
-     font-size: 1.2rem;
-     padding: 10px 15px;
+     padding-top: 5px;
  }
 
 .alissa-image {
     padding: 40px 0 0;
 }
-
-   
-
 }
 
 
-@media (max-width:600px) {
+@media (max-width:670px) {
 
-    section p {
-    font-size: 1.5rem;
+section p {
     line-height: 29px;
     padding: 20px 0 40px;
     text-decoration: none;
 }
+
+.social-links {
+   display: none;
+}
+
+/* MAIN SECTION  */
 .about-us-text, 
 .our-mission-text,
 .alissa-text {
@@ -452,13 +442,10 @@ section p {
      padding-top: 330px;
 }
    
-.social-links {
-   display: none;
-} 
-
- .more-links-items a  {
+.more-links-items a  {
     font-size: 2.5rem;
 }
+
 .more-links-items i {
     font-size: 3.5rem;
 }
@@ -467,36 +454,13 @@ section p {
     font-size: 5rem;
 }
 
-.more-links {
-    background-position: 70% 0 ;
-}
-.nav-links nav{
-    
-    display: block;
-}
-.nav-links ul {
-    background: lightgrey;
-    width: 150px; 
-    position: fixed;
-    top: 50px;
-    right: -300px;
-    padding-top: 5px;
-    text-align: center;
-   
-}
 .read-more{
-     font-size: 1.5rem;
      padding: 10px 30px;
  }
 
-.nav-links label {
-
-    display: inline-block;
-}
-
-.nav-links input {
-    display: inline;
-    visibility: hidden;
+/* Positioning the cyclist in the background */
+.more-links {
+    background-position: 70% 0 ;
 }
 
 .address, .subscribe {
@@ -510,45 +474,26 @@ section p {
     padding: 15px 0;
 }
 
-form {
-    font-size: 2rem;
-   
-}
-
-input[type="checkbox"]:checked  ~ label  {
-    background-color: lightgrey;
-    color: white;
-}
-
-input[type="checkbox"]:checked  ~ label i {
-    color: white;
-}
-
-input[type="checkbox"]:checked ~  ul {
-	right: 0; 
-}
-
 header {
        background-image: url('./assets/image-1-mobile@2x.jpg');
        background-size: cover;
-   }
+}
 
-.grid-two {
+.grid-two,
+.grid {
     width: 100%;
     float: none;
 }
 
 .grid-one {
-       width: 100%;
-       float: right;
- }    
- 
- .grid {
-    float: none;
     width: 100%;
-}
-
-.alissa-image, .alissa-text {
+    float: right;
+}    
+ 
+.alissa-image,
+.alissa-text,
+.address,
+.subscribe  {
     width: 100%;
 }
 
@@ -556,29 +501,90 @@ header {
        width: calc((100% - 20px) / 2);
        margin-right: 10px;
 }
+
 .gallery-images div:nth-child(3n) {
        display: none;
 }
-.address, .subscribe {
-      width: 100%;
-}
 
-input[type=email], input[type=button]{
+input[type=email],
+input[type=button]{
       width: 100%;
       padding: 10px 10px;
      
 }
-   
+
 input[type=email]{
       margin-bottom: 10px;
       text-align: center;    
 }
 
 h1 {
-      font-size: 7rem;
+      font-size: 7.5rem;
       padding: 0;
       margin-top: 300px ;
       text-decoration: none;
+}
+
+.contact li {
+    text-transform: capitalize;
+    margin: 10px;
+}
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media (max-width: 590px) {
+
+/* DISPLAY MAIN NAV AS PART OF HAMBURGER MENU */
+.nav-links nav{
+    display: block;
+}
+
+/* move nav out of the screen before hamburger menu is clicked */
+.nav-links ul {
+    background-color: #F4F4F4;
+    width: 150px; 
+    position: fixed;
+    top: 50px;
+    right: -300px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.nav-links label {
+    display: inline-block;
+}
+
+.nav-links input {
+    display: inline;
+    visibility: hidden;
+}
+
+/* Padding for About Us text area */
+.about-us-text {
+     padding-top: 270px;
+}
+
+/* STYLING WHEN CHECKBOX/HAMBURGER MENU IS CLICKED FOR MAIN NAV  */
+
+input[type="checkbox"]:checked  ~ label  {
+    background-color:#F4F4F4;    
+}
+
+input[type="checkbox"]:checked  ~ label i{
+    color: #1F2022;
+}
+
+input[type="checkbox"]:checked ~  ul {
+    right: 0;    
+}
+
+header li:hover,
+header li:focus {
+    color: #F2A11C;
+}
+
+header li {
+    color:  #1F2022;
 }
 
 }
