@@ -65,7 +65,7 @@ header {
 }
 h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 12rem;
+    font-size: 13rem;
     text-align: center;
     color: #F2A11c;
     margin-top: 250px;
@@ -76,7 +76,7 @@ h1 {
 }
 h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 4rem; 
+    font-size: 4.2rem; 
     color:#1F2022;
 
 }
@@ -391,6 +391,10 @@ input[type=button]{
     font-size: 2rem;
 }
 
+.copyright a:hover,
+.copyright a:focus {
+    color: lightgrey;
+}
 
 
 
