@@ -391,10 +391,12 @@ input[type=button]:focus{
     color: #F4F4F4;
 }
 
-
+.menu-close {
+    visibility: hidden;
+}
  /* MEDIA QUERIES */
- /* MEDIA QUERIES FOR TABLETS */
 
+ /* MEDIA QUERIES FOR TABLETS */
  @media (max-width: 860px) {
 
 .about-us-text, .our-mission-text {
@@ -544,10 +546,11 @@ h1 {
     background-color: #F4F4F4;
     width: 150px; 
     position: fixed;
-    top: 50px;
+    top: 10px;
     right: -300px;
-    padding-top: 5px;
+    padding-top: 35px;
     text-align: center;
+    transition: all 0.4s;
 }
 
 .nav-links label {
@@ -566,12 +569,15 @@ h1 {
 
 /* STYLING WHEN CHECKBOX/HAMBURGER MENU IS CLICKED FOR MAIN NAV  */
 
-input[type="checkbox"]:checked  ~ label  {
-    background-color:#F4F4F4;    
-}
-
 input[type="checkbox"]:checked  ~ label i{
     color: #1F2022;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked  ~ label.menu-close i{
+    color: #1F2022;
+    visibility: visible;
+
 }
 
 input[type="checkbox"]:checked ~  ul {
